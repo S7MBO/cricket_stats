@@ -22,17 +22,17 @@ Ponting's Test Career ran from 1995 - 2012. Some of his many achievements are li
 * **196 Catches** (4th Highest in Tests)
 * **77 Matches as Captain** (4th Highest in Tests)
 
-![Dashboard_01](/images/Dashboard_01.png)
+![Dashboard_01](/images/Dashboard_01.PNG)
 
 Ponting's career really took off in 1999 where he established himself as one of the world's premier batsmen. 2003, 2005 and 2006 were his most productive, in terms of runs scored and his batting average. 
 
 It comes as no surprise than runs scored were much larger at home on Australian pitches where he played the most cricket.
 
-![Dashboard_02](/images/Dashboard_02.png)
+![Dashboard_02](/images/Dashboard_02.PNG)
 
 In 1999 Ricky Ponting ended up in a drunken bar fight in Kings Cross which got him into a lot of trouble. Analysis shows his decision to ~~get loose and punch on~~ shape up his public image and strive to be better he became the **world's premier batsman.**
 
-![Ricky Ponting](/images/Bar_Fight.png)
+![Ricky Ponting](/images/Bar_Fight.PNG)
 
 ![Ricky Ponting](/images/ponting_rm2.jpg)
 
