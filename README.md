@@ -7,12 +7,12 @@
 
 ## Project Goals
 
-This project showcased developing skills learnt from Monash University Data Analytics & Visualisation where I explored batting statistics from a cricket player’s career.
+This project showcased developing skills learnt from Monash University in Data Analytics & Visualisation where I explored batting statistics from a cricket player’s Test match career.
 
 Technologies used:
 * MS SQL Server for data exploration and cleaning
 * Tableau to create visualisations from the clean data
-* Explore Machine Learning generated stats and plots via R Studio
+* Explore Machine Learning generated stats and plots via R & R Studio
 
 Sources used:
 * https://data.world/cclayford/cricinfo-statsguru-data
@@ -22,7 +22,7 @@ Sources used:
 
 ## Data Exploration
 
-The data for this project was sourced from data.world but can also be scraped from Cricinfo’ StatsGuru. The datasets from data.world are stored by Century. As Ponting debuted in 1995 and retired in 2012, I needed to merge the 20th and 21st Century Test stats datasets.
+The data for this project was sourced from data.world but can also be scraped from Cricinfo’s StatsGuru. The datasets from data.world are stored by Century. As Ponting debuted in 1995 and retired in 2012, I needed to merge the 20th and 21st Century Test stats datasets.
 
 During initial exploration of the data, it was evident we could remove many unnecessary columns eg. bowling stats. We would of course remove all other players’ stats as well.
 
@@ -39,24 +39,22 @@ This was then exported to a new .csv where visualisations would be built off.
 
 ## Data Visualisation in Tableau
 
-Using Tableau, I created many visualisations including the below example which visualised the positive correlation between Batting Average & Runs Scored per year. Ponting's career Strike Rate remained high even through his lean periods indicating his positive strokeplay throughout his career.
+Using Tableau, I created many visualisations including the below example which visualised the positive correlation between Batting Average & Runs Scored per year. Ponting's career Strike Rate remained high even through his lean periods indicating his positive strokeplay he was renowned for throughout his career.
 
 ![Dashboard_02](/images/Dashboard_02.PNG)
 
 An interesting (or maybe not) analysis I picked up …
 
-In 1999 Ricky Ponting ended up in a drunken bar fight in Kings Cross which put his career at a crossroads & in jeopardy. Analysis shows his decision to clean up his image and strive to be better he became the world's premier batsman …
+In 1999 Ricky Ponting ended up in a bar fight in Kings Cross which put his career at a crossroads & in jeopardy. Analysis shows his decision to clean up his image and strive to be better, resulted in him becoming the world's premier batsman.
 
 ![Bar_Fight](/images/Bar_Fight.PNG)
 
 
 ## Data Visualisation in R with cricketr
 
-The cricketr package has several functions that perform several different analyses on both batsman and bowlers. The package has function that plot percentage frequency runs or wickets, runs likelihood for a batsman, relative run/strike rates of batsman and relative performance/economy rate for bowlers are available.
+The cricketr package has many functions that perform different analyses on both batsmen and bowlers, including functions that plot the likelihood of runs for a batsman, relative run & strike rates of batsmen and relative performance & economy rate for bowlers.
 
-Other interesting functions include batting performance moving average, forecast and a function to check whether the batsmans in in-form or out-of-form.
-
-The data for a particular player can be obtained with the getPlayerData() function. To do you will need to go to ESPN CricInfo Player and type in the name of the player for e.g Ricky Ponting. This will bring up a page which have the profile number for the player e.g. for Sachin Tendulkar this would be https://www.espncricinfo.com/player/ricky-ponting-7133. Hence, Ponting’s profile is 7133.
+The data for a particular player can be obtained with the getPlayerData() function to pull from ESPN CricInfo's Player index, in this case Ricky Ponting. Inspecting the page we can find the profile number for the player e.g. for Ricky Ponting this would be https://www.espncricinfo.com/player/ricky-ponting-7133. Ponting’s profile number of 7133 is what we need.
 
 ![R-package-ponting](/images/R-package-ponting.PNG)
 
@@ -75,7 +73,7 @@ Some interesting visualisations found are included below.
 
 90% of runs were used as the training set in this model, with 10% used as the test set. A Holt-Winters forecasting model is used to forecast future performance based on the 90% training set. The forecasted runs trend is plotted. The test set is also plotted to see how close the forecast and the actual matches.
 
-In this case we expected Ponting to score quite heavily as he had done throughout his career, but the model did not anticipate a late-career  slump where Ponting’s average and runs output dropped significantly.
+In this case we expected Ponting to score quite heavily as he had done throughout his career, but the model did not anticipate a late-career form slump where Ponting’s average and runs output dropped significantly.
 
 ![Rplot-runs-forecast](/images/Rplot-runs-forecast.png)
 
